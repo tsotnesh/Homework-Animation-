@@ -1,0 +1,172 @@
+body {
+	width: 1371px;
+	height: 642px;
+}
+
+.backphoto {
+	width: 1371px;
+	height: 642px;
+}
+
+.back {
+	position: relative;
+}
+
+.plantsea1 {
+	position: absolute;
+	top: 450px;
+	left: 250px;
+	z-index: 1;
+}
+
+.plantsea2 {
+	position: absolute;
+	top: 450px;
+	left: 900px;
+	z-index: 1;
+}
+
+.nemo {
+	position: absolute;
+	top: 450px;
+	left: 250px;
+	height: 100px;
+	z-index: 0;
+	animation: nemoanimation 5s infinite;
+}
+
+.nemo2 {
+	position: absolute;
+	top: 450px;
+	left: 900px;
+	height: 100px;
+	z-index: 0;
+	animation: nemoanimation 6s infinite;
+}
+
+.someone {
+	position: absolute;
+	height: 100px;
+	top: 500px;
+	left: 700px;
+	animation: someone 5s infinite alternate;
+}
+
+.shark {
+	position: absolute;
+	animation: sharkanimation 10s infinite;
+}
+
+.starfish1 {
+	position: absolute;
+	height: 70px;
+	top: 550px;
+	left: 30px;
+	animation: starfishanimation 3s infinite alternate;
+	transition: all 2s ease-in-out;
+}
+
+.starfish2 {
+	position: absolute;
+	height: 70px;
+	top: 550px;
+	right: 50px;
+	animation: starfishanimation 3s infinite alternate;
+	transition: all 2s ease-in-out;
+}
+
+.mustache {
+	position: absolute;
+	height: 80px;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	animation: mustacheanime 5s infinite;
+}
+
+.shark2 {
+	position: absolute;
+	top: 20px;
+	left: 100px;
+	height: 100px;
+	animation: sharkanime 6s infinite alternate;
+}
+
+.diver {
+	position: absolute;
+	top: 40px;
+	right: 900px;
+	height: 100px;
+	animation: diveranime  10s  infinite alternate;
+	transition: all 2s ease-in-out;
+}
+
+
+
+@keyframes nemoanimation{
+	0%{transform: translateY(0px) rotate(0deg); }
+	25%{transform: translateY(-80px) rotate(45deg); }
+	50%{transform: translateY(-80px) rotate(90deg); }
+	75%{transform: translateY(-30px) rotate(120deg); }
+	100%{transform: translateY(0px)  rotate(0deg);} 
+
+}
+
+@keyframes someone {
+	0%{transform:translateY(0px)}
+	25%{transform:translateY(-150px)}
+	50%{transform:translateY(-150px)}
+	75%{transform:translateY(-55px)}
+	100%{transform:translateY(0px)}
+}
+
+@keyframes sharkanimation {
+	0%{left: 100px; top: 500px }
+	25%{left: 100px; top: 100px}
+	50%{left: 1100px; top: 100px}
+	75%{left: 1100px; top: 500px}
+	100%{left: 100px; top: 500px}
+}
+
+@keyframes starfishanimation {
+   from{top: 550px;}
+   to{top: 530px;}
+}
+
+@keyframes mustacheanime {
+	0%{left: 600px}
+	20%{left: 550px}
+	50%{left: 600px}
+	80%{left: 650px}
+	100%{left: 600px}
+}
+
+@keyframes sharkanime {
+   from {top: 20px; left: 100px; }  
+   to{top: 20px;  left: 1000px;}
+}
+
+@keyframes diveranime {
+	0%{transform: translateY(0px)  rotate(0deg);}
+	20%{transform: translateY(200px) rotate(45deg); }
+	40%{transform: translateY(500px) rotate(90deg);}
+	50%{transform: translateY(400px) rotate(120deg);}
+	100%{transform:translateY(0px) rotate(150deg); }
+}
+
+.starfish1:hover {
+transform: scale(1.5,1.5);
+}
+ .starfish2:hover {
+ transform: scale(1.5,1.5);
+}
+
+
+
+
+
+
+
+
+
+
